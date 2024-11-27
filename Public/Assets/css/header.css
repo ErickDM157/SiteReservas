@@ -1,1 +1,5 @@
 @import "root.css";
+
+.header-background{
+    background-color: var(--bg-primary-color);
+}
