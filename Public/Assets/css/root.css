@@ -3,7 +3,7 @@
 :root{
     /*Cores da página*/
     --bg-primary-color: #273526;     
-    --bg-secondary-color: #;
+    --bg-secondary-color: #6D8777;
     --bg-tertiary-color: #;
     --bg-tertiary-accent-color: #;
     --bg-suplementary-color: #;
@@ -22,8 +22,9 @@
     --font-tertiary: font-family: 'Yantramanav', sans-serif;
 
     /*Tamanho textos*/
-    --h1-30: 30px;
-    --h2-20: 20px;;
+    --h1-45: 45px;
+    --h1-40: 40px;
+    --h2-24: 20px;;
     --h2-16: 16px;
     --h3-12: 12px;
     --h4-10: 10px;
@@ -45,6 +46,7 @@ body{
     font-family: var(--font-secondary);
     font-weight: var(--weight-regular);
     line-height: var(--line-height);
+    font-size: var(--h2-16);
 }
 
 /*#region Cor dos textos*/

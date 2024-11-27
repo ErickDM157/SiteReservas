@@ -1,5 +1,21 @@
 @import "root.css";
 
+h3{
+    color: var(--light-color);
+}
 .header-background{
     background-color: var(--bg-primary-color);
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+.header-options{
+    display: flex;
+    gap: 30px;
+}
+.icones-box{
+    display: flex;
+    text-decoration: none;
+    color: var(--light-color);
 }
