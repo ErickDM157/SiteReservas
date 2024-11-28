@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt0br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/css/layout.css">
-    <link rel="stylesheet" href="Assets/css/header.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
+
 <body>
-    <div class="header-background">
+    <header>
         <div class="container">
-            <div class="col-12">      
-                <div class="header-box">
-                    <img class="logo" src="elements/icons/logo.svg" alt="logo">   
-                    <div class="header-options">
-                        <a class="icones-box" href="">
-                            <img class="icon" src="elements/icons/SuasReservas.svg" alt="reservas">
-                            <h2>Suas Reservas</h2>
-                        </a>
-                        <a class="icones-box" href="">
-                            <img class="icon" src="elements/icons/coracao.svg" alt="coração">
-                            <h2>favoritos</h2>
-                        </a>
-                        <a class="icones-box" href="">
-                            <img class="icon" src="elements/icons/sino.svg" alt="sino">
-                            <h2>Salvar  </h2>
-                        </a>
-                        <a class="icones-box"   href="">
-                            <img class="icon" src="elements/icons/user.svg" alt="user">
-                            <h2>Nome Usuário</h2>
-                        </a>
+            <div class="area">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./elements/icons/logo.svg" alt="" />
+                    </a>
+                </div>
+                <div class="menu-opener">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close-icon">
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
-        </div>  
-    </div>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="./elements/icons/sino.svg" alt="Ícone de Notificações">Salvar</a></li>
+                    <button class="header-button">Cadastre-se</button>
+                    <button class="header-button">Login</button>
+                    
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <script src="Assets/js/mobile-navbar.js"></script>
 </body>
-</html> 
+
+</html>
