@@ -3,5 +3,8 @@
 @import "./footer.css";
 @import "./header.css";
 @import "./layout.css";
-@import "./Fonts/fonts.css"
-
+@import "./Fonts/fonts.css";
+@import "./modelspace.css";
+@import "./cadastro.css";
+@import "/login.css";
+@import "./home.css";   
