@@ -7,9 +7,7 @@ body {
 
 /* Configuração do Container de Colunas */
 .container {
-    display: grid;
-    /* grid-template-columns: repeat(12, 1fr); /* Define um grid com 12 colunas */
-    gap: 20px;
+    display: grid;/* grid-template-columns: repeat(12, 1fr); /* Define um grid com 12 colunas */
     box-sizing: border-box;
     margin: auto;
     width: 100%;
