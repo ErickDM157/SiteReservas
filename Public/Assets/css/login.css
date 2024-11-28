@@ -13,7 +13,7 @@ body {
     background-color: #ffffff;
 }
 
-.container {
+.login-con {
     display: flex;
     width: 90%;
     max-width: 1200px;
