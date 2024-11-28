@@ -1,0 +1,7 @@
+@import "root.css";
+
+.paybox{
+    background-color: var(--bg-primary-color);
+    background: linear-gradient(287.12deg, #273526 10.09%, #729B6F 100%);
+    border-radius: 20px;
+}
