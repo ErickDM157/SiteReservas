@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: #273526;
+}
+
+.left {
+    background-color: #273526;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.left p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.left button {
+    padding: 0.8rem 2rem;
+    background-color: #273526;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.right {
+    flex: 2;
+    background-color: white;
+    padding: 2rem;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d3b5e;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.error {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row > .form-group {
+    flex: 1;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #6d8777;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+.google-login {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.google-login button {
+    padding: 0.8rem 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
