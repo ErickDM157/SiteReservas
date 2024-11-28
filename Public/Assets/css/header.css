@@ -5,17 +5,24 @@ h3{
 }
 .header-background{
     background-color: var(--bg-primary-color);
+    height: 50px;
 }
 .header-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-options{
     display: flex;
     gap: 30px;
+    font-size: var(--h3-12);
 }
 .icones-box{
     display: flex;
     text-decoration: none;
     color: var(--light-color);
+}
+.icon{
+    height: 25px;
+    width: 25px;
 }
