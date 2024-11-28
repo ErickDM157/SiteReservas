@@ -18,6 +18,7 @@
 .home-bg h1,h2,h3,p{
     color: var(--light-color);
 }
-.bravel-options{
-    
+.bravel-option{
+    background-color: var(--bg-secondary-color);
+    width: 300px;
 }
