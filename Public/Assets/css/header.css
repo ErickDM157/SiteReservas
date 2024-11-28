@@ -3,7 +3,7 @@
 h3{
     color: var(--light-color);
 }
-.header-background{
+header{
     background-color: var(--bg-primary-color);
     height: 50px;
 }
