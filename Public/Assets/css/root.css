@@ -2,7 +2,8 @@
 /* Variávies root */
 :root{
     /*Cores da página*/
-    --bg-primary-color: #273526;     
+    --bg-primary-color: #273526;   
+    --bg-primary-accent-color: #3e4e3c;  
     --bg-secondary-color: #6D8777;
     --bg-tertiary-color: #;
     --bg-tertiary-accent-color: #;
