@@ -1,2 +1,10 @@
 @import "root.css";
-
+.footer{
+    display: flex;
+    background-color: var(--bg-primary-color);
+    color: #FFFFFF;
+    justify-content: center;
+    font-weight: var(--weight-regular);
+    height: 32px;
+    align-items: center;
+}

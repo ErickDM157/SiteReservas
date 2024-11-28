@@ -8,13 +8,12 @@ body {
 /* Configuração do Container de Colunas */
 .container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* Define um grid com 12 colunas */
+    /* grid-template-columns: repeat(12, 1fr); /* Define um grid com 12 colunas */
     gap: 20px;
-    padding: 0 120px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
 }
 
 /* Classes para as colunas */

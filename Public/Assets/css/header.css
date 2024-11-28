@@ -1,50 +1,148 @@
-@import "root.css";
-
-h3{
-    color: var(--light-color);
-}
-header{
+header {
+    position: sticky;
+    inset: 0 0 auto 0;
+    z-index: 10;
+    box-shadow: 0 0 5px #ccc;
     background-color: var(--bg-primary-color);
     height: 50px;
 }
-.header-box{
+
+header .banner {
+    display: block;
+    background-color: var(--thirdground);
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+header .banner:hover {
+    opacity: 0.8;
+}
+
+header .logo img {
+    width: 30px;
+}
+
+header .area {
     display: flex;
     justify-content: space-between;
-}
-.header-options{
-    display: flex;
-    font-size: 10px;
-    justify-content: center;
     align-items: center;
-    display: flex;
-
 }
-.header-options :hover{
-    background-color: var(--bg-primary-accent-color);
 
+header .menu-opener {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
 }
-.icones-box{
+
+header .hamburger-icon {
     display: flex;
-    text-decoration: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--light-color);
+}
+
+header .close-icon {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+header .close-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--secondary);
+}
+
+header .close-icon span:first-child {
+    transform: rotate(45deg);
+}
+
+header .close-icon span:last-child {
+    transform: rotate(-45deg);
+}
+
+header nav {
     color: var(--light-color);
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 0px 15px 0px 15px;
-    border-radius: 10px;
-}
-.icon{
-    height: 25px;
-    width: 25px;
-}
-.logo{
-    height: 25px;
-    width: 25px;
-}
-.login-header{
-    border-radius: 5px;
-    height: 35px;
-    font-size: 15px;
-    margin-left: 20px;  
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all ease 0.5s;
 }
 
+header nav.opened {
+    max-height: 100vh;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Para mobile */
+    background-color: var(--bg-primary-color);
+    padding-bottom: 2rem;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav a {
+    display: flex; /* Ícone e texto lado a lado */
+    align-items: center;
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: var(--h2-14);
+}
+
+header nav a img {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header nav a.bold {
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    header .menu-opener {
+        display: none;
+        background-color: var(--bg-primary-color);
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav {
+        max-height: 100vh;
+    }
+
+    header nav ul {
+        flex-direction: row; /* Para desktop */
+        padding-bottom: 0;
+    }
+
+    header nav li {
+        padding: 0 1rem; /* Espaçamento horizontal */
+    }
+}
