@@ -15,10 +15,13 @@ h3{
     display: flex;
     font-size: 10px;
     justify-content: center;
+    align-items: center;
+    display: flex;
 
 }
 .header-options :hover{
     background-color: var(--bg-primary-accent-color);
+
 }
 .icones-box{
     display: flex;
@@ -42,7 +45,6 @@ h3{
     border-radius: 5px;
     height: 35px;
     font-size: 15px;
-    margin-left: 20px;
-    transform: translateY(5px);
+    margin-left: 20px;  
 }
 
