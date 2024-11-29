@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .c-b {
     font-family: Arial, sans-serif;
     display: flex;
@@ -11,6 +12,7 @@
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
+
 }
 
 .cadastro-con {
@@ -63,19 +65,17 @@
     margin-bottom: 1.5rem;
     color: #2d3b5e;
 }
-
-.form-group {
+.form-g input {
+    width: 510px;
+    height: 60px;
+    border-radius: 15px; 
+    border: 0.8px solid var(--bg-primary-color);
+    box-shadow: var(--shandow-color);
+}
+.form-g {
     margin-bottom: 1rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #555;
-}
-
-input,
 select {
     width: 100%;
     padding: 0.8rem;
@@ -84,18 +84,18 @@ select {
     font-size: 1rem;
 }
 
-.error {
+.e {
     font-size: 0.9rem;
     color: red;
     margin-top: 0.5rem;
 }
 
-.form-row {
+.form-r {
     display: flex;
     gap: 1rem;
 }
 
-.form-row > .form-group {
+.form-r > .form-g {
     flex: 1;
 }
 
