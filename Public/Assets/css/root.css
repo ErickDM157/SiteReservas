@@ -3,7 +3,7 @@
 :root{
     /*Cores da página*/
     --bg-primary-color: #273526;   
-    --bg-primary-accent-color: #40563F;  
+    --bg-primary-accent-color: #4f624e;  
     --bg-secondary-color: #6D8777;
     --bg-tertiary-color: #092844;
     --bg-confirmation-color: #88EC7F;
@@ -80,13 +80,16 @@ body{
 
 /* Estilo padrão dos botôes */
 button{
-    background-color: var();
-    color: var();
-    font-size: var();
-    font-weight: var();
-    padding: 10px 20px 10px 20px;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    border-radius: 15;
+    background-color: var(--bg-secondary-color);
+    color: var(--light-color);
+    font-size: var(--h2-14);
+    font-weight: var(--line-height);
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: var(--shandow-color);
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--bg-primary-color);
 }
