@@ -3,7 +3,7 @@
 :root{
     /*Cores da página*/
     --bg-primary-color: #273526;   
-    --bg-primary-accent-color: #3e4e3c;  
+    --bg-primary-accent-color: #40563F;  
     --bg-secondary-color: #6D8777;
     --bg-tertiary-color: #092844;
     --bg-confirmation-color: #88EC7F;
@@ -55,6 +55,12 @@ body{
     font-weight: var(--weight-regular);
     line-height: var(--line-height);
     font-size: var(--h2-16);
+}
+.page-title{
+    font-size: var(--h1-40);
+}
+.page-subtitle{
+    font-size: var(--h2-24);
 }
 
 /*#region Cor dos textos*/

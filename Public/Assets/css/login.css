@@ -1,0 +1,122 @@
+<<<<<<< HEAD
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+<<<<<<< HEAD
+=======
+.l-b {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+>>>>>>> 5ba18c60ee7144ba59fb132cffdd03671c1bbedf
+.login-con {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: var(--shandow-color);
+}
+
+.left {
+    background-color: var(--bg-primary-color);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.left p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.left button {
+    padding: 0.8rem 2rem;
+    background-color: var(--bg-primary-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.right {
+    flex: 2;
+    background-color: white;
+    padding: 2rem;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--bg-tertiary-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.error {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 0.5rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bg-primary-accent-color);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+.google-login {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.google-login button {
+    padding: 0.8rem 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+>>>>>>> 4858de1a0214187d9d43d0497bd586ea0631f4a9

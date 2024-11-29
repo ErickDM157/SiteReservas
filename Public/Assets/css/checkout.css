@@ -1,8 +1,6 @@
 @import "root.css";
 
 #textocheckout{
-    display: flex;
-    justify-content: center;
     color: 092844;
 }
 .paybox{

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .c-b {
     font-family: Arial, sans-serif;
     display: flex;
@@ -11,6 +12,7 @@
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
+
 }
 
 .cadastro-con {
