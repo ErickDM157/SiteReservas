@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+.l-b {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+>>>>>>> 5ba18c60ee7144ba59fb132cffdd03671c1bbedf
 .login-con {
     display: flex;
     width: 90%;
