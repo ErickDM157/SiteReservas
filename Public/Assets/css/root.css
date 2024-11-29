@@ -67,6 +67,9 @@ body{
 .color-black{
     color: var(--dark-color);
 }
+.bold{
+    font-weight: bold   ;
+}
 .color-white{
     color: white;
 }
@@ -88,6 +91,7 @@ button{
     border-radius: 15px;
     border: none;
     box-shadow: var(--shandow-color);
+    height: 60px;
 }
 button:hover{
     cursor: pointer;

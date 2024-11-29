@@ -9,7 +9,6 @@
         url("../../elements/img/background-home.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
     width: 100%;
     height: 220px;
@@ -23,7 +22,7 @@
 .home-bg h1,h2,h3,p{
     color: var(--light-color);
 }
-.home-bg h1,h2{
+.home-bg >  h1,h2{
     text-align: center ;
 }
 .bravel-option{
@@ -54,3 +53,93 @@
     height: 30px;
     margin: 0px 30px 0px 15px;
 }
+.alert-login{
+    border: 1px solid var(--bg-secondary-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+}
+.alert-login h3{
+    color: var(--dark-color);
+}
+.etiqueta{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--bg-primary-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.etiqueta img{
+    width: 40px;
+    height: 40px;
+}
+.fazer-login{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.etiqueta-box{
+    display: flex;
+    align-items: center;
+}
+.normal{
+    color: var(--dark-color);
+    text-align: left;
+}
+  .container.destinos h2 {
+    padding-top: 60px;
+  }
+  
+  .destinos h2 {
+    margin-bottom: 15px;
+  }
+  
+  .image-wrapper-box {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 20px;
+    justify-items: center; 
+  }
+  .images {
+    width: 100%; /* Assegura que as imagens ocupem todo o espaço da célula */
+    height: auto; /* Mantém a proporção */
+  }
+  
+  /* Estilo das imagens menores (linha inferior) */
+  .images.small {
+    grid-column: span 1; /* Cada imagem ocupa 1 coluna */
+    width: 70%; /* Imagens menores */
+    margin: 0 auto; /* Centraliza as imagens menores */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .image-wrapper-box {
+      grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas menores */
+    }
+  
+    .images.small {
+      width: 60%; /* Reduz ainda mais o tamanho das imagens pequenas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-wrapper-box {
+      grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+  
+    .images.small {
+      width: 100%; /* Ocupa toda a largura */
+    }
+  }
+  
