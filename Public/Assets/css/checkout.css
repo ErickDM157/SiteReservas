@@ -1,7 +1,6 @@
 @import "root.css";
 
 #textocheckout{
-
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -10,7 +9,7 @@
 .checkout{
     margin-top: 60px;
     width: 1364px;
-    height: 790px;
+    height: 590px;
     left: 278px;
     top: 190px;
     mix-blend-mode: normal;
@@ -36,5 +35,18 @@
 }
 
 .infocheckout{
+    text-align: justify;
+    width: 700px;
     padding: 40px 50px;
+}
+
+.linha{
+    display: flex;
+
+    justify-content: space-between;
+    width: 400px;
+}
+
+#pequena{
+    width: 180px;
 }

@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .l-b {
+=======
+body {
+>>>>>>> 2a7fe8ad27e9762314b15b00def75b2a2e206d15
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -13,14 +17,18 @@
     background-color: #ffffff;
 }
 
+<<<<<<< HEAD
 .login-con {
+=======
+.container-login {
+>>>>>>> 2a7fe8ad27e9762314b15b00def75b2a2e206d15
     display: flex;
     width: 90%;
     max-width: 1200px;
     box-shadow: var(--shandow-color);
 }
 
-.left {
+.login-left {
     background-color: var(--bg-primary-color);
     color: white;
     flex: 1;
@@ -31,20 +39,20 @@
     padding: 2rem;
 }
 
-.left h2 {
+.login-left h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.left p {
+.login-left p {
     font-size: 1rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.left button {
+.botao-cadastrar {
     padding: 0.8rem 2rem;
-    background-color: var(--bg-primary-color);
+    background-color: var(--bg-primary-accent-color);
     border: none;
     color: white;
     font-size: 1rem;
@@ -52,19 +60,19 @@
     border-radius: 4px;
 }
 
-.right {
+.login-right {
     flex: 2;
     background-color: white;
     padding: 2rem;
 }
 
-.right h2 {
+.login-right h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: var(--bg-tertiary-color);
 }
 
-.form-group {
+.login-form-group {
     margin-bottom: 1rem;
 }
 
@@ -83,13 +91,19 @@ input {
     font-size: 1rem;
 }
 
-.error {
+.login-error {
     font-size: 0.9rem;
     color: red;
     margin-top: 0.5rem;
 }
-
-.btn-submit {
+.login-form-group input {
+    width: 510px;
+    height: 60px;
+    border-radius: 15px; 
+    border: 0.8px solid var(--bg-primary-color);
+    box-shadow: var(--shandow-color);
+}
+.botao-login {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--bg-primary-accent-color);
@@ -101,12 +115,12 @@ input {
     margin-top: 1.5rem;
 }
 
-.google-login {
+.login-google {
     text-align: center;
     margin-top: 2rem;
 }
 
-.google-login button {
+.botao-google {
     padding: 0.8rem 2rem;
     background-color: #fff;
     border: 1px solid #ccc;
