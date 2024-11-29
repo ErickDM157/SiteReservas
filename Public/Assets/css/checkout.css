@@ -1,21 +1,24 @@
 @import "root.css";
 
 #textocheckout{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     color: 092844;
 }
-.paybox{
-    position: absolute;
+.checkout{
+    margin-top: 60px;
     width: 1364px;
-    height: 790px;
+    height: 590px;
     left: 278px;
     top: 190px;
-
     mix-blend-mode: normal;
     background: linear-gradient(287.12deg, #273526 10.09%, #729B6F 100%);
     border-radius: 20px;
 }
 
 .formulario{
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap:25px;
@@ -23,6 +26,7 @@
 }
 
 .tabela{
+    margin: 0px;
     border: none;
     width: 400px;
     height: 45px;
@@ -30,6 +34,19 @@
     border-radius: 10px;
 }
 
-.texto{
-    padding: 20px 50px;
+.infocheckout{
+    text-align: justify;
+    width: 700px;
+    padding: 40px 50px;
+}
+
+.linha{
+    display: flex;
+
+    justify-content: space-between;
+    width: 400px;
+}
+
+#pequena{
+    width: 180px;
 }
