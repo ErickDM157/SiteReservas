@@ -1,35 +1,40 @@
-@import "root.css";
-
+/* Reset de margem e padding do body */
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Configuração do Container de Colunas */
 .container {
-    display: grid;/* grid-template-columns: repeat(12, 1fr); /* Define um grid com 12 colunas */
+    width: 100%;          
+    max-width: 1200px;  
+    margin: 0 auto;     
     box-sizing: border-box;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
 }
 
-/* Classes para as colunas */
-.col-1  { grid-column: span 1; }
-.col-2  { grid-column: span 2; }
-.col-3  { grid-column: span 3; }
-.col-4  { grid-column: span 4; }
-.col-5  { grid-column: span 5; }
-.col-6  { grid-column: span 6; }
-.col-7  { grid-column: span 7; }
-.col-8  { grid-column: span 8; }
-.col-9  { grid-column: span 9; }
-.col-10 { grid-column: span 10; }
-.col-11 { grid-column: span 11; }
-.col-12 { grid-column: span 12; }
-
-/* Remove o grid-template-columns da .row */
-.row {
-    display: contents; /* Usa o grid definido no container */
+/* Responsividade */
+@media (max-width: 500px) {
+    .container {
+        display: block;
+        padding: 10px;
+    }
 }
 
+/* Outras classes específicas, por exemplo, para imagens */
+.images {
+    width: 100%;            /* Garante que as imagens não ultrapassem o container */
+    height: auto;           /* Mantém a proporção da imagem */
+}
+
+/* Títulos e subtítulos */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}

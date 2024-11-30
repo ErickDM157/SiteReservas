@@ -1,70 +1,100 @@
-  <!DOCTYPE html>
-  <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Reserva de Destinos no Brasil</title>
-    <link rel="stylesheet" href="Assets/css/header.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Reserva de Destinos no Brasil</title>
+  <link rel="stylesheet" href="Assets/css/home.css">
+</head>
 
-  <body>
-    <div class="home-bg">
-      <h1 class="page-title">Encontre o Destino Perfeito no Brasil!</h1>
-      <h2 class="page-subtitle">Para fazer reservas através do WebSite, preencha os campos necessários acima e tenha uma
-        experencia
-        personalizada e única </h2>
-    </div>
+<body>
+  <header>
     <div class="container">
-      <div class="bravel-option">
-        <div class="icon-text">
-          <img src="elements/icons/location.svg" alt="localização">
-          <h3>Para onde você vai?</h3>
+      <div class="area">
+        <div class="logo">
+          <a href="/">
+            <img src="./elements/icons/logo.svg" alt="" />
+          </a>
         </div>
-        <div class="icon-text">
-          <img src="elements/icons/calendar.svg" alt="data">
-          <div class="box-icon-text">
-            <h3 class="bold">Data</h3>
-            <p>1 diária ou dez</p>
+        <div class="menu-opener">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="close-icon">
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <div class="icon-text">
-          <img src="elements/icons/viajantes.svg" alt="viajantes">
-          <div class="box-icon-text">
-            <h3>Viajantes</h3>
-            <p>2 viajantes, 1 quarto</p>
-          </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href=""><img src="./elements/icons/suasReservas.svg" alt="Ícone de Suas Reservas"> Suas Reservas</a>
+          </li>
+          <li><a href=""><img src="./elements/icons/coracao.svg" alt="Ícone de Favoritos"> Favoritos</a></li>
+          <li><a href=""><img src="./elements/icons/sino.svg" alt="Ícone de Notificações">Notificações</a></li>
+          <li><a href=""><img src="./elements/icons/user.svg" alt="Ícone de Usuário"> Nome Usuário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script src="Assets/js/mobile-navbar.js"></script>
+  <div class="home-bg">
+    <h1 class="page-title">Encontre o Destino Perfeito no Brasil!</h1>
+    <h2 class="page-subtitle">Para fazer reservas através do WebSite, preencha os campos necessários acima e tenha uma
+      experencia personalizada e única </h2>
+  </div>
+  <div class="container">
+    <div class="bravel-option">
+      <div class="icon-text">
+        <img src="elements/icons/location.svg" alt="localização">
+        <h3>Para onde você vai?</h3>
+      </div>
+      <div class="icon-text">
+        <img src="elements/icons/calendar.svg" alt="data">
+        <div class="box-icon-text">
+          <h3 class="bold">Data</h3>
+          <p>1 diária ou dez</p>
         </div>
-        <button>Buscar</button>
       </div>
-    </div>
-    <div class="container alert-login">
-      <div class="etiqueta-box">
-        <div class="etiqueta">
-          <img src="elements/icons/etiqueta.svg" alt="Etiqueta">
+      <div class="icon-text">
+        <img src="elements/icons/viajantes.svg" alt="viajantes">
+        <div class="box-icon-text">
+          <h3>Viajantes</h3>
+          <p>2 viajantes, 1 quarto</p>
         </div>
-        <h3 class="etiqueta-text bold">Nossos afilados economizam até 15% em reservas em todo Brasil ao fazer login.</h3>
       </div>
-      <button class="fazer-login">Fazer Login</button>
+      <button>Buscar</button>
     </div>
-    <div class="container destinos">
-      <div class="col-12">
-        <h2 class="normal bold">Destinos mais procurados</h2>
-        <p class="normal">Opções mais procuradas para viajantes no Brasil</p>
+  </div>
+  <div class="container alert-login">
+    <div class="etiqueta-box">
+      <div class="etiqueta">
+        <img src="elements/icons/etiqueta.svg" alt="Etiqueta">
       </div>
-      <div class="image-wrapper-box">
-        <!-- Linha superior -->
-        <img src="elements/img/img1.png" alt="Imagem 1" class="images">
-        <img src="elements/img/img1.png" alt="Imagem 2" class="images">
-        <img src="elements/img/img1.png" alt="Imagem 3" class="images">
-        <!-- Linha inferior -->
-        <img src="elements/img/img1.png" alt="Imagem 4" class="images small">
-        <img src="elements/img/img1.png" alt="Imagem 5" class="images small">
-        <img src="elements/img/img1.png" alt="Imagem 6" class="images small">
-      </div>
+      <h3 class="etiqueta-text bold">Nossos afilados economizam até 15% em reservas em todo Brasil ao fazer login.</h3>
     </div>
-    
+    <button class="fazer-login">Fazer Login</button>
+  </div>
+  <div class="container destinos">
+    <h2 class="normal bold">Destinos mais procurados</h2>
+    <p class="normal">Opções mais procuradas para viajantes no Brasil</p>
+    <div class="image-wrapper-box">
+      <div class="row1">
+        <img src="elements/img/destinos-img1.png" alt="Imagem 1" class="images small">
+        <img src="elements/img/destinos-img2.png" alt="Imagem 2" class="images small">
+        <img src="elements/img/destinos-img3.png" alt="Imagem 3" class="images small">
+      </div>
+      <div class="row2">
+        <img src="elements/img/destinos.img4.png" alt="Imagem 4" class="images small">
+      <img src="elements/img/destinos-img5.png" alt="Imagem 5" class="images smamll">
+      <img src="elements/img/destinos-img6.png" alt="Imagem 6" class="images small">
+      </div>
+      
+    </div>
+  </div>
+</body>
 
-  </body>
-
-  </html>
+</html>

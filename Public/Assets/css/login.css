@@ -1,14 +1,12 @@
+@import "root.css";
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.l-b {
-=======
 body {
->>>>>>> 2a7fe8ad27e9762314b15b00def75b2a2e206d15
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -17,11 +15,7 @@ body {
     background-color: #ffffff;
 }
 
-<<<<<<< HEAD
-.login-con {
-=======
 .container-login {
->>>>>>> 2a7fe8ad27e9762314b15b00def75b2a2e206d15
     display: flex;
     width: 90%;
     max-width: 1200px;

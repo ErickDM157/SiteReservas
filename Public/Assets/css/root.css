@@ -1,4 +1,7 @@
 @import "fonts/fonts.css";
+@import "./layout.css";
+@import "./header.css";
+@import "./footer.css";
 /* Variávies root */
 :root{
     /*Cores da página*/
@@ -23,8 +26,8 @@
     --font-tertiary: font-family: 'Yantramanav', sans-serif;
 
     /*Tamanho textos*/
-    --h1-45: 45px;
-    --h1-40: 40px;
+    --h1-30: 30px;
+    --h1-35: 35px;
     --h2-24: 20px;;
     --h2-14: 14px;
     --h3-12: 12px;

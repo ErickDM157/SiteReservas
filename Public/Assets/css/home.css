@@ -1,3 +1,5 @@
+@import "./root.css";
+
 * {
     padding: 0;
     list-style: none;
@@ -11,12 +13,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 0px 0px 60px 60px;
     padding-top: 60px;
 }
 .home-bg h1{
-    font-size: var(--h1-40);
+    font-size: var(--h1-30);
     margin-bottom: 15px;
 }
 .home-bg h1,h2,h3,p{
@@ -31,13 +33,16 @@
     display: flex;
     justify-content: space-evenly;
     border-radius: 15px;
-    height: 120px;
+    height: 80px;
     align-items: center;
     transform: translateY(-60px);
     box-shadow: var(--shandow-color);
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    padding: 10px; /* Adiciona espaçamento interno */
 }
 .icon-text{
-    width:  260px;
+    width: 100%; 
+    max-width: 250px; 
     height: 60px;
     border-radius: 10px;
     border: 1px solid var(--bg-secondary-color);  
@@ -102,44 +107,64 @@
   }
   
   .image-wrapper-box {
-    width: 100%;
-    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: auto auto; 
+    grid-template-rows: repeat(2, 1fr); /* 2 linhas */
     gap: 20px;
-    justify-items: center; 
+    justify-items: center;
+    margin-top: 30px;
+  }
+  .row1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .row2{
+    display: grid;
+    grid-template-columns: ;
   }
   .images {
-    width: 100%; /* Assegura que as imagens ocupem todo o espaço da célula */
-    height: auto; /* Mantém a proporção */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
   }
-  
-  /* Estilo das imagens menores (linha inferior) */
-  .images.small {
-    grid-column: span 1; /* Cada imagem ocupa 1 coluna */
-    width: 70%; /* Imagens menores */
-    margin: 0 auto; /* Centraliza as imagens menores */
+  .small{
+    
   }
-  
   /* Responsividade */
-  @media (max-width: 768px) {
-    .image-wrapper-box {
-      grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas menores */
+  @media (max-width: 500px) {
+    .bravel-option {
+        transform: none;
     }
-  
-    .images.small {
-      width: 60%; /* Reduz ainda mais o tamanho das imagens pequenas */
-    }
+}
+@media (max-width: 300px) {
+  .alert-login {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      padding: 10px; /* Reduz o padding */
+      height: auto; /* Permite ajuste automático da altura */
+      text-align: center; /* Centraliza o conteúdo */
   }
-  
-  @media (max-width: 480px) {
-    .image-wrapper-box {
-      grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
-    }
-  
-    .images.small {
-      width: 100%; /* Ocupa toda a largura */
-    }
+
+  .etiqueta-box {
+      margin-bottom: 10px; /* Espaçamento entre os elementos ao empilhar */
   }
-  
+
+  .fazer-login {
+      width: 100%; /* O botão ocupa toda a largura */
+  }
+
+  .etiqueta {
+      width: 40px; /* Reduz o tamanho do círculo */
+      height: 40px;
+  }
+
+  .etiqueta img {
+      width: 30px; /* Reduz o tamanho do ícone */
+      height: 30px;
+  }
+
+  .alert-login h3 {
+      font-size: 14px; /* Diminui o tamanho da fonte */
+  }
+}
+
