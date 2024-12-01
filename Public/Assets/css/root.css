@@ -58,6 +58,7 @@ body{
     font-weight: var(--weight-regular);
     line-height: var(--line-height);
     font-size: var(--h2-16);
+    padding-bottom: 90px;
 }
 .page-title{
     font-size: var(--h1-40);
