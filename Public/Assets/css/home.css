@@ -49,7 +49,7 @@ h2 {
     gap: 20px;
 }
 
-.icon-text {
+.bravel-option .icon-text {
     width: 100%;
     max-width: 250px;
     white-space: nowrap;
@@ -65,15 +65,15 @@ h2 {
     box-sizing: border-box;
 }
 
-.icon-text h3 {
+.bravel-option .icon-text h3 {
     white-space: wrap;
 }
 
-.icon-text:hover {
+.bravel-option .icon-text:hover {
     background-color: var(--bg-primary-color);
 }
 
-.icon-text img {
+.bravel-option .icon-text img {
     width: 30px;
     height: 30px;
     margin: 0px 30px 0px 15px;
@@ -96,7 +96,7 @@ h2 {
     margin-right: 20px;
 }
 
-.etiqueta {
+.alert-login .etiqueta {
     max-width: 60px;
     max-height: 60px;
     padding: 20px;
@@ -108,12 +108,12 @@ h2 {
     margin-right: 30px;
 }
 
-.etiqueta img {
+.alert-login .etiqueta img {
     width: 40px;
     height: 40px;
 }
 
-.fazer-login {
+.alert-login .fazer-login {
     width: 160px;
     display: flex;
     align-items: center;
@@ -121,7 +121,7 @@ h2 {
     margin-top: 5px;
 }
 
-.etiqueta-box {
+.alert-login .etiqueta-box {
     display: flex;
     align-items: center;
 }
@@ -131,7 +131,7 @@ h2 {
     text-align: left;
 }
 
-.container.destinos h2 {
+.container h2 {
     padding-top: 60px;
 }
 
@@ -139,23 +139,22 @@ h2 {
     margin-bottom: 15px;
 }
 
-.image-wrapper-box {
+.destinos .image-wrapper-box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    /* 2 linhas */
     gap: 20px;
     justify-items: center;
     margin-top: 30px;
 }
 
-.row1 {
+.destinos .row1 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.row2 {
+.destinos .row2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -163,31 +162,107 @@ h2 {
     margin-right: 30px;
 }
 
-.image-box {
+.destinos .image-box {
     max-width: 100%;
     max-height: 250px;
     height: 100%;
     display: block;
 }
 
-.images {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+.wrapper-brasil-scroll {
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 15px;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: start; 
+    max-width: 100%;
 }
 
+.wrapper-brasil {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: max-content; 
+    scroll-snap-align: start; 
+}
+
+.wrapper-brasil .images-box {
+    width: calc(100% / 8.35 - 20px);
+    flex: 0 0 auto; 
+    scroll-snap-align: center;
+}
+
+.wrapper-brasil img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+}
+
+.wrapper-brasil-scroll::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.wrapper-brasil-scroll::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 4px;
+}
+
+.perfect-stay {
+    margin-top: 60px;
+    background-color: var(--bg-suplementary-color);
+    border-radius: 20px;
+    display: flex; /* Corrige o uso errado de "flexbox" */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    min-height: 80px;
+    height: auto;
+}
+
+.perfect-stay .stay-text {
+    text-align: left;
+    padding: 20px;
+}
+.perfect-stay .stay-wrapper {
+    display: flex; 
+    justify-content: start;
+    overflow-x: auto; 
+    gap: 20px; 
+    width: 100%;
+    height: auto;
+    padding: 10px 0; 
+}
+.perfect-stay .box {
+    flex: 0 0 auto; 
+    width: 230px;
+    height: 120px; 
+    border-radius: 15px;
+    background-color: var(--bg-suplementary-color2);
+    line-height: 120px; 
+    text-align: center;
+}
+.perfect-stay .stay-wrapper::-webkit-scrollbar {
+    height: 8px; 
+}
+.perfect-stay .stay-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 4px;
+}
 /* Responsividade */
 @media (max-width: 500px) {
     .bravel-option {
         transform: none;
     }
-    .row1,.row2{
+    .destinos .row1,.row2{
         grid-template-columns: 1fr 1fr;
         margin-left: 0px;
         margin-right: 0px;
-        column-gap: 20px;
+        gap: 20px;
     }
-    .row1 :nth-child(3), .row2 :nth-child(3){
+    .destinos .row1 :nth-child(3), .row2 :nth-child(3){
         grid-column: 1;
         grid-row: 2;
     }
@@ -203,26 +278,32 @@ h2 {
         max-width: 100%;
         padding: 10px 20px;
     }
-    .image-wrapper-box{
-        row-gap: 20px;
+    .destinos .image-wrapper-box{
+        row-gap: 0px;
     }
-    .row1,.row2{
+    .destinos .row2{
         grid-template-columns: 1fr 1fr;
         margin-left: 0px;
         margin-right: 0px;
-        column-gap: 20px;
+        gap: 20px;
     }
-    .image-box img{
+    .destinos .row1{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 20px;
+    }
+    .destinos .image-box img{
         border-radius: 10px;
         max-height: 200px;
     }
-    .row1 :nth-child(3), .row2 :nth-child(3){
+    .destinos .row1 :nth-child(3), .row2 :nth-child(3){
         grid-column: 1 / 3;
         grid-row: 2;
         margin-bottom: 20px;
     }
     
-    .icon-text {
+    .bravel-option .icon-text {
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -239,22 +320,26 @@ h2 {
 
 @media (max-width: 300px) {
 
-    .row1,
-    .row2 {
+    .destinos .row1,
+    .destinos .row2 {
         grid-template-columns: 1fr;
         gap: 20px;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .image-box img{
+    .destinos .image-box img{
         border-radius: 10px;
     }
-    .image-wrapper-box{
-        row-gap: 20px;
+    .destinos .image-wrapper-box{
+        row-gap: 0px;
     }
-    .row1 :nth-child(3), .row2 :nth-child(3){
+    .destinos .row1 :nth-child(3), .row2 :nth-child(3){
         grid-column: 1;
         grid-row: 2;
+        margin: 0;
+    }
+    .destinos .row2 :nth-child(1){
+        gap: 20px;
     }
 
     .alert-login {
@@ -264,23 +349,23 @@ h2 {
         text-align: center;
     }
 
-    .etiqueta-box {
+    .alert-login .etiqueta-box {
         margin-bottom: 10px;
         /* Espaçamento entre os elementos ao empilhar */
     }
 
-    .fazer-login {
+    .alert-login.fazer-login {
         width: 100%;
         /* O botão ocupa toda a largura */
     }
 
-    .etiqueta {
+    .alert-login .etiqueta {
         width: 40px;
         /* Reduz o tamanho do círculo */
         height: 40px;
     }
 
-    .etiqueta img {
+    .alert-login .etiqueta img {
         width: 30px;
         /* Reduz o tamanho do ícone */
         height: 30px;

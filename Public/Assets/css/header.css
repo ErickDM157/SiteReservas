@@ -5,9 +5,9 @@ header {
     font-family: 'Inter', sans-serif;
     inset: 0 0 auto 0;
     z-index: 10;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: var(--shandow-color);
     background-color: var(--bg-primary-color);
-    height: 50px;
+    max-height: 50px;
 }
 
 header .banner {
@@ -24,15 +24,16 @@ header .banner:hover {
 }
 
 header .logo img {
-    width: 40px;
+    width: 30px;
+    height: auto;
 }
 
 header .area {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
 }
 
 header .menu-opener {
@@ -92,11 +93,15 @@ header nav.opened {
 header nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    gap: 30px;
+    padding: 0px;
+    padding: 0px 10px 20px 0px;
+    gap: 10px;
     display: flex;
-    flex-direction: column; /* Para mobile */
+    flex-direction: column; 
     background-color: var(--bg-primary-color);
+    opacity: 90%;
+    border-radius: 0px 0px 30px 20px;
+    
 }
 
 header nav ul li {
@@ -111,9 +116,12 @@ header nav ul li {
 header nav ul li:hover{
     background-color: var(--bg-secondary-color);
 }
-
+header nav ul .header-button{
+    background-color: var(--bg-secondary-color);
+    height: 32.5px;
+}
 header nav a {
-    display: flex; /* Ícone e texto lado a lado */
+    display: flex; 
     align-items: center;
     color: var(--light-color);
     text-decoration: none;
@@ -121,11 +129,11 @@ header nav a {
 }
 
 header nav a img {
-    width: 20px; /* Tamanho do ícone */
+    width: 20px;
     height: 35px;
     display: flex;
     align-items: center;    
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    margin-right: 5px; 
 }
 
 header nav a:hover {
@@ -140,16 +148,18 @@ header .header-button{
     height: 30px;
     background-color: var(--light-color);
     border-radius: 5px;
+    width: 150px;
 }
 header .header-button:hover{
     cursor: pointer;
-    background-color: var(--bg-primary-accent-color)    ;
+    background-color: var(--bg-primary-accent-color);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     header .menu-opener {
         display: none;
         background-color: var(--bg-primary-color);
+        
     }
 
     header .container {
@@ -163,11 +173,11 @@ header .header-button:hover{
     }
 
     header nav ul {
-        flex-direction: row; /* Para desktop */
+        flex-direction: row; 
         padding-bottom: 0;
     }
 
     header nav li {
-        padding: 0 1rem; /* Espaçamento horizontal */
+        padding: 0 1rem; 
     }
 }
