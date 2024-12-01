@@ -1,0 +1,124 @@
+@import "root.css";
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container-login {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: var(--shandow-color);
+}
+
+.login-left {
+    background-color: var(--bg-primary-color);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.login-left p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.botao-cadastrar {
+    padding: 0.8rem 2rem;
+    background-color: var(--bg-primary-accent-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.login-right {
+    flex: 2;
+    background-color: white;
+    padding: 2rem;
+}
+
+.login-right h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--bg-tertiary-color);
+}
+
+.login-form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-error {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 0.5rem;
+}
+.login-form-group input {
+    width: 510px;
+    height: 60px;
+    border-radius: 15px; 
+    border: 0.8px solid var(--bg-primary-color);
+    box-shadow: var(--shandow-color);
+}
+.botao-login {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bg-primary-accent-color);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+.login-google {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.botao-google {
+    padding: 0.8rem 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}

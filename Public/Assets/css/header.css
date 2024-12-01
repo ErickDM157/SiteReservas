@@ -1,0 +1,173 @@
+
+@import "root.css";
+header {
+    position: sticky;
+    font-family: 'Inter', sans-serif;
+    inset: 0 0 auto 0;
+    z-index: 10;
+    box-shadow: 0 0 5px #ccc;
+    background-color: var(--bg-primary-color);
+    height: 50px;
+}
+
+header .banner {
+    display: block;
+    background-color: var(--bg-primary-color);
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+header .banner:hover {
+    opacity: 0.8;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header .area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header .menu-opener {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+header .hamburger-icon {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: var(--light-color);
+}
+
+header .close-icon {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+header .close-icon span {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: var(--light-color);
+}
+
+header .close-icon span:first-child {
+    transform: rotate(45deg);
+}
+
+header .close-icon span:last-child {
+    transform: rotate(-45deg);
+}
+
+header nav {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all ease 0.5s;
+}
+
+header nav.opened {
+    max-height: 100vh;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    display: flex;
+    flex-direction: column; /* Para mobile */
+    background-color: var(--bg-primary-color);
+}
+
+header nav ul li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-right: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+header nav ul li:hover{
+    background-color: var(--bg-secondary-color);
+}
+
+header nav a {
+    display: flex; /* Ícone e texto lado a lado */
+    align-items: center;
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: var(--h2-14);
+}
+
+header nav a img {
+    width: 20px; /* Tamanho do ícone */
+    height: 35px;
+    display: flex;
+    align-items: center;    
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header nav a.bold {
+    font-weight: bold;
+}
+header .header-button{
+    padding: 0px 10px 0px 10px;
+    height: 30px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+header .header-button:hover{
+    cursor: pointer;
+    background-color: var(--bg-primary-accent-color)    ;
+}
+
+@media (min-width: 900px) {
+    header .menu-opener {
+        display: none;
+        background-color: var(--bg-primary-color);
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav {
+        max-height: 300px
+    }
+
+    header nav ul {
+        flex-direction: row; /* Para desktop */
+        padding-bottom: 0;
+    }
+
+    header nav li {
+        padding: 0 1rem; /* Espaçamento horizontal */
+    }
+}

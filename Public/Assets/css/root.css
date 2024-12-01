@@ -1,0 +1,103 @@
+@import "fonts/fonts.css";
+@import "./layout.css";
+@import "./header.css";
+@import "./footer.css";
+/* Variávies root */
+:root{
+    /*Cores da página*/
+    --bg-primary-color: #273526;   
+    --bg-primary-accent-color: #4f624e;  
+    --bg-secondary-color: #6D8777;
+    --bg-tertiary-color: #092844;
+    --bg-confirmation-color: #88EC7F;
+    --bg-suplementary-color: #;
+    --ft-primary-color: #;
+    --ft-secondary-color: #;
+
+    /*Outras cores (texto)*/
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --green-color: #;
+    --shandow-color: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    /*Textos*/
+    --font-primary: font-family: 'Catamaran', sans-serif;;
+    --font-secondary: font-family: 'Assistant', sans-serif;
+    --font-tertiary: font-family: 'Yantramanav', sans-serif;
+
+    /*Tamanho textos*/
+    --h1-30: 30px;
+    --h1-35: 35px;
+    --h2-24: 20px;;
+    --h2-14: 14px;
+    --h3-12: 12px;
+    --h4-10: 10px;
+
+    --line-height: 1.2;
+
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /*margin padrão */
+    --mg-1: 15px;
+    --mg-2: 30px;
+    --mg-3: 60px;
+    --mg-4: 90px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Alguns Estilos do body padrão */
+body{
+    font-family: var(--font-secondary);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height);
+    font-size: var(--h2-16);
+    padding-bottom: 90px;
+}
+.page-title{
+    font-size: var(--h1-40);
+}
+.page-subtitle{
+    font-size: var(--h2-24);
+}
+
+/*#region Cor dos textos*/
+.color-black{
+    color: var(--dark-color);
+}
+.bold{
+    font-weight: bold   ;
+}
+.color-white{
+    color: white;
+}
+.color-primary{
+    color: var(--ft-primary-color)
+}
+.color-secondary{
+    color: var(--bg-tertiary-color)
+}
+/* #endregion */
+
+/* Estilo padrão dos botôes */
+button{
+    background-color: var(--bg-secondary-color);
+    color: var(--light-color);
+    font-size: var(--h2-14);
+    font-weight: var(--line-height);
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: var(--shandow-color);
+    height: 60px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--bg-primary-color);
+}
