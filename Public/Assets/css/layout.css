@@ -7,6 +7,7 @@ body {
 
 /* Configuração do Container de Colunas */
 .container {
+    font-family: 'Inter', sans-serif;
     width: 100%;          
     max-width: 1200px;  
     margin: 0 auto;     
