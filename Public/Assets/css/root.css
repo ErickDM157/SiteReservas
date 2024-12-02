@@ -53,13 +53,14 @@
     box-sizing: border-box;
 }
 
-/* Alguns Estilos do body padrão */
+/*#region Alguns Estilos do body padrão */
 body{
     font-family: var(--font-secondary);
     font-weight: var(--weight-regular);
     line-height: var(--line-height);
     font-size: var(--h2-16);
     padding-bottom: 90px;
+    overflow-x: hidden;
 }
 .page-title{
     font-size: var(--h1-40);
@@ -67,6 +68,14 @@ body{
 .page-subtitle{
     font-size: var(--h2-24);
 }
+.normal {
+    color: var(--dark-color);
+    text-align: left;
+}
+.container h2 {
+    padding-top: 60px;
+}
+/*#endregion */
 
 /*#region Cor dos textos*/
 .color-black{
@@ -84,9 +93,14 @@ body{
 .color-secondary{
     color: var(--bg-tertiary-color)
 }
+.normal {
+    color: var(--dark-color);
+    text-align: left;
+}
+
 /* #endregion */
 
-/* Estilo padrão dos botôes */
+/* #region Estilo padrão dos botôes */
 button{
     background-color: var(--bg-secondary-color);
     color: var(--light-color);
@@ -102,3 +116,4 @@ button:hover{
     cursor: pointer;
     background-color: var(--bg-primary-color);
 }
+/* #endregion */
