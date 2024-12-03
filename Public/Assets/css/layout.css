@@ -108,6 +108,15 @@ img {
     padding: 0 10px;
     box-sizing: border-box;
 }
+.alert-login button a{
+    text-decoration: none; 
+    color: inherit;
+    outline: none; 
+    background: none; 
+    border: none; 
+    font-weight: vvar
+    var(--weight-bold);
+}
 
 .bravel-option .icon-text h3 {
     white-space: wrap;
