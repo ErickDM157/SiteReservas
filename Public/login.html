@@ -4,52 +4,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/css/cadastro.css" />
+    <link rel="stylesheet" href="./Assets/css/login.css" />
 </head>
+
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div class="top-buttons-password">
+        <a href="./indexLogar.html"><img src="elements/icons/seta.svg" alt="seta" class="icon-new-password"></a>
+    </div>
     <div class="login-wrapper">
         <div class="coluna2">
-            <h2>Cadastro</h2>
+            <h2>fazer login</h2>
             <form class="form-wrapper">
                 <div class="input-box">
-                    <input type="text" id="name" placeholder="Insira seu nome" />
-                    <p class="alert">Nome inválido</p>
-                </div>
-                <div class="input-box">
                     <input type="email" id="email" placeholder="Insira seu email" />
-                    <p class="alert">Email incorreto ou não cadasrado.</p>
                 </div>
                 <div class="input-box">
                     <input type="password" id="password" placeholder="Insira sua senha" />
-                    <p class="alert"></p>
+                    <p class="alert">Email ou senha incorretos</p>
                 </div>
-                <div class="input-box">
-                    <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
-                    <p class="alert">As senhas não coincidem</p>
-                </div>
-                <div class="input-box">
-                    <input type="number" id="age" placeholder="Insira sua idade" />
-                    <p class="alert">Informe uma idade válida</p>
-                </div>
-                <div class="input-box">
-                    <select id="gender">
-                        <option value="" disabled selected>
-                            Selecione
-                        </option>
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn-submit">Cadastrar</button>
+                <button type="submit" class="btn-submit">Fazer login</button>
             </form>
             <p>ou</p>
             <button type="button" class="google">Google</button>
         </div>
         <div class="coluna1">
             <div class="text-box">
-                <h1 class="text1">Ja tem uma conta?</h1>
-                <p class="text2">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade. </p>
-                <button class="login">Faca o Login</button>
+                <h1 class="text1">Não tem uma conta?</h1>
+                <p class="text2">Crie uma conta agora e descubra as melhores opções de hospedagem. Reservar nunca foi
+                    tão fácil!</p>
+                <button class="login">Cadastre-se agora</button>
             </div>
         </div>
     </div>

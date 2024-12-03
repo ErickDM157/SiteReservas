@@ -4,7 +4,7 @@ body{
 }
 .login-wrapper{
     display: grid;
-    grid-template-columns: 3fr 5fr;
+    grid-template-columns: 5fr 3fr;
     background: #273526;
     min-height: 100vh;
     height: 100%;
@@ -12,8 +12,6 @@ body{
 .coluna1{
     display: grid;
     justify-content: center;
-    grid-column: 1;
-    grid-row: 1;
     padding: 20px;
 }
 .coluna1 button{
@@ -35,6 +33,7 @@ body{
 }
 .login-wrapper button{
     width: 100%;
+    margin-bottom: 30px;
 }
 .login button:hover, .google:hover{
     background-color: var(--bg-primary-accent-color);
@@ -65,7 +64,7 @@ body{
 .form-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
     width: 100%;
     max-width: 450px;
