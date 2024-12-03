@@ -73,6 +73,13 @@ body{
 
 .input-box {
     grid-column: span 2; 
+    position: relative;
+}
+.input-box :nth-child(2){
+    position: absolute;
+    right: 0; 
+    top: 48px;  
+
 }
 .login-wrapper select {
     border-radius: 15px;
@@ -154,5 +161,17 @@ body{
     }
     .coluna2 p{
         margin-top: 30px;
+    }
+    .input-box {
+        grid-column: span 2; 
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-box :nth-child(2){
+        position: absolute;
+        right: 0; 
+        top: 48px;  
+    
     }
 }
