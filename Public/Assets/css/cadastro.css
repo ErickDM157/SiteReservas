@@ -1,40 +1,30 @@
 @import "root.css";
-.cadastro{
-    position: absolute;
-    width: 800px;
-    height:100%;
-    left: 0px;
-    top: 0px;
+.cadastro-wrapper{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
     background: #273526;
-    font-family: 'Inter', sans-serif;
-}
+    height: 100vh;
 
-.text1{
-    padding-top: 40%;
+
+}
+.coluna1{
+    display: grid;
     justify-content: center;
+
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+.coluna2{
+    background-color: #FFFFFF;
     display: flex;
-    color: #FFFFFF;
+
 }
 
-.text2{
-    display: flex;
+.text1, .text2{
+    max-width: 350px;
     text-align: center;
-    justify-content: center;
-    font-weight: 100;
-    padding-top: 10px;
     color: #FFFFFF;
 }
 
-.butao{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
 
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 300px;
-}

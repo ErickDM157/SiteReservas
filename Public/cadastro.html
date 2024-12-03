@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./Assets/css/cadastro.css" />
-    </head>
-    <body>
-        <div class="cadastro">
-                <h1 class="text1">Ja tem uma conta?</h1>
-                <h3 class="text2">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.</h3>
-            <div class="butao">
-                <button class="login">Faca o Login</button>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/cadastro.css" />
+</head>
+
+<body>
+    <div class="cadastro-wrapper">
+        <div class="coluna2">
+            <h2>Cadastro</h2>
+            <form>
+                <input type="text" id="name" placeholder="Insira seu nome" />
+                <input type="email" id="email" placeholder="Insira seu email" />
+                <input type="password" id="password" placeholder="Insira sua senha" />
+                <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
+                <input type="number" id="age" placeholder="Insira sua idade" />
+                <select id="gender">
+                    <option value="" disabled selected>
+                        Selecione
+                    </option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
         </div>
-        <footer>
-            <p class="text">Copyright © 2024</p>
-        </footer>
-    </body>
+        <div class="coluna1">
+            <h1 class="text1">Ja tem uma conta?</h1>
+            <h3 class="text2">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.
+            </h3>
+            <button class="login">Faca o Login</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text">Copyright © 2024</p>
+    </footer>
+</body>
+
 </html>
