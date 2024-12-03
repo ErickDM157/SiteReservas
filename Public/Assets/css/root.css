@@ -13,7 +13,7 @@
     --bg-suplementary-color: #DA1233;
     --bg-suplementary-color2: #A81A26;
     --ft-primary-color: #;
-    --ft-secondary-color: #;
+    --ft-secondary-color: #454545;
 
     /*Outras cores (texto)*/
     --light-color: #ffffff;
@@ -27,9 +27,9 @@
     --font-tertiary: font-family: 'Yantramanav', sans-serif;
 
     /*Tamanho textos*/
-    --h1-30: 30px;
-    --h1-35: 35px;
-    --h2-24: 20px;;
+    --h1-1: 1.5rem;
+    --h1-2: 1.4rem;
+    --h2-1: ;
     --h2-14: 14px;
     --h3-12: 12px;
     --h4-10: 10px;
